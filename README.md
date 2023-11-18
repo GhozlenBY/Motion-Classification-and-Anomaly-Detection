@@ -10,14 +10,19 @@ L'objectif central du projet est d'exploiter les capacités de l'apprentissage a
 # Configuration et Initialisation
 
 Connexion de la Carte Arduino : Le projet a débuté par la connexion de la carte Arduino à notre système, formant la base de notre appareil de collecte de données.
+
 Chargement du Firmware : Nous avons chargé le firmware Edge Impulse sur l'Arduino à l'aide du script flash fourni (.bat pour Windows). Cette étape était essentielle pour rendre la carte compatible avec Edge Impulse.
+
 Vérification du Système : Après le flashage, nous avons effectué un reset de la carte Arduino et vérifié dans le projet Edge Impulse pour assurer une connectivité et une préparation sans faille pour l'acquisition de données.
 
 # Collecte de Données
 
 Méthodologie : À l'aide d'une application pour smartphone conçue pour générer des vibrations, nous avons imité différents états de machines et collecté les données correspondantes de l'accéléromètre.
+
 Étiquetage des Données : Chaque ensemble de données a été méticuleusement étiqueté selon son état opérationnel pour assurer l'exactitude des phases d'entraînement et de test. Cette étape est cruciale dans les tâches d'apprentissage supervisé.
+
 Volume et Variété : Des données adéquates pour chaque état (off, light, heavy) ont été rassemblées, en veillant à l'équilibre entre les ensembles de données d'entraînement et de test.
+
 ![Texte alternatif](https://github.com/GhozlenBY/Motion-Classification-and-Anomaly-Detection/issues/1#issue-2000591401)
 
 # Extraction de Caractéristiques
@@ -31,6 +36,7 @@ Détection d'Anomalies avec K-means : Nous avons intégré le clustering K-means
 # Entraînement du Modèle
 
 Modèle de Réseau Neuronal : Le cœur de notre projet, le modèle de réseau neuronal, a été entraîné avec les caractéristiques extraites. Les hyperparamètres ont été finement ajustés pour optimiser les performances du modèle.
+
 Précision et Validation : La précision du modèle a été étroitement surveillée pour garantir qu'elle se situe dans des plages acceptables, essentiel pour la fiabilité du système.
 
 ![Texte alternatif](https://github.com/GhozlenBY/Motion-Classification-and-Anomaly-Detection/issues/4#issue-2000593749)
