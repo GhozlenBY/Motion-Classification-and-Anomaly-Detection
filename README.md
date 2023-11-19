@@ -1,4 +1,9 @@
 # Machine State Classification Using Edge Impulse and Arduino
+![image](https://github.com/GhozlenBY/Motion-Classification-and-Anomaly-Detection/assets/148441001/f7d85c06-98f5-470a-8d38-87c2e4e09b27) ![image](https://github.com/GhozlenBY/Motion-Classification-and-Anomaly-Detection/assets/148441001/e38976d1-a964-42ce-8a0e-02cb745c2693) ![image](https://github.com/GhozlenBY/Motion-Classification-and-Anomaly-Detection/assets/148441001/2cee95bd-baed-4db8-8662-4427328e3aae) ![image](https://github.com/GhozlenBY/Motion-Classification-and-Anomaly-Detection/assets/148441001/361cbfa3-79e7-4d91-b772-92914e0f1aa3)
+
+https://github.com/GhozlenBY/Motion-Classification-and-Anomaly-Detection/tree/main
+
+
 
 #  Overview
 
@@ -21,9 +26,9 @@ Méthodologie : À l'aide d'une application pour smartphone conçue pour génér
 
 Étiquetage des Données : Chaque ensemble de données a été méticuleusement étiqueté (label) selon son état opérationnel pour assurer l'exactitude des phases d'entraînement et de test. Cette étape est cruciale dans les tâches d'apprentissage supervisé.
 
-Volume et Variété : Des données adéquates pour chaque état (off, light, heavy) ont été rassemblées, en veillant à l'équilibre entre les ensembles de données d'entraînement et de test.
+Volume et Variété : Des données adéquates pour chaque état (off= anomalie, light = charge légère, heavy = lourde charge) ont été rassemblées, en veillant à l'équilibre entre les ensembles de données d'entraînement et de test.
+![Data_acquisation](https://github.com/GhozlenBY/Motion-Classification-and-Anomaly-Detection/assets/148441001/2dc3cbc8-45de-47f6-960f-1de9049814df)
 
-![Texte alternatif](https://github.com/GhozlenBY/Motion-Classification-and-Anomaly-Detection/issues/1#issue-2000591401)
 
 # Extraction de Caractéristiques
 
@@ -31,7 +36,9 @@ Approche : Nous avons employé l'analyse spectrale pour transformer les données
 Intégration du Réseau Neuronal : Un réseau neuronal a été utilisé pour son aptitude à extraire et à apprendre des motifs complexes dans les données.
 Détection d'Anomalies avec K-means : Nous avons intégré le clustering K-means pour distinguer les anomalies, une étape cruciale pour détecter des modèles inhabituels qui pourraient indiquer des problèmes potentiels.
 
-![Texte alternatif](https://github.com/GhozlenBY/Motion-Classification-and-Anomaly-Detection/issues/2#issue-2000593319)
+![select_features](https://github.com/GhozlenBY/Motion-Classification-and-Anomaly-Detection/assets/148441001/ff2d46eb-4c5d-415d-96f5-753387e4815b)
+![spectral_features](https://github.com/GhozlenBY/Motion-Classification-and-Anomaly-Detection/assets/148441001/f3ab5680-e596-4e09-940f-cbcdc58a3e26)
+
 
 # Entraînement du Modèle
 
@@ -39,32 +46,30 @@ Modèle de Réseau Neuronal : Le cœur de notre projet, le modèle de réseau ne
 
 Précision et Validation : La précision du modèle a été étroitement surveillée pour garantir qu'elle se situe dans des plages acceptables, essentiel pour la fiabilité du système.
 
-![Texte alternatif](https://github.com/GhozlenBY/Motion-Classification-and-Anomaly-Detection/issues/4#issue-2000593749)
+![classifier](https://github.com/GhozlenBY/Motion-Classification-and-Anomaly-Detection/assets/148441001/cc12fbb6-6969-4aa9-aaae-a08d616a53a4)
 
 # Détection d'Anomalies
 
 Entraînement de Modèle Séparé : Un modèle de détection d'anomalies supplémentaire a été entraîné, se concentrant sur les caractéristiques qui indiquent le mieux les modèles inhabituels, renforçant les capacités prédictives du système.
 
-![Texte alternatif](https://github.com/GhozlenBY/Motion-Classification-and-Anomaly-Detection/issues/5#issue-2000594110)
+![anomaly_detection](https://github.com/GhozlenBY/Motion-Classification-and-Anomaly-Detection/assets/148441001/97eda03c-2218-4037-8508-c8d307523018)
 
 # Test du Modèle
 
 Évaluation des Performances : Les modèles entraînés ont été rigoureusement testés avec des données inédites pour évaluer leur performance, assurant la fiabilité et l'exactitude du système dans des scénarios réels.
-![Data_acquisation](https://github.com/GhozlenBY/Motion-Classification-and-Anomaly-Detection/assets/148441001/2dc3cbc8-45de-47f6-960f-1de9049814df)
 
-![Texte alternatif](https://github.com/GhozlenBY/Motion-Classification-and-Anomaly-Detection/issues/6#issue-2000594344)
+![model_testing](https://github.com/GhozlenBY/Motion-Classification-and-Anomaly-Detection/assets/148441001/814dfd29-374d-4332-92a3-0ba8d521c849)
 
 # Déploiement
 
 Application en Temps Réel sur Arduino : L'étape finale a impliqué le déploiement des modèles entraînés sur la carte Arduino, permettant au système de classer efficacement les états des machines en temps réel.
 
-![Texte alternatif](https://github.com/GhozlenBY/Motion-Classification-and-Anomaly-Detection/issues/7#issue-2000594581)
+![dep](https://github.com/GhozlenBY/Motion-Classification-and-Anomaly-Detection/assets/148441001/27733114-1307-4adf-9b5e-06d08af1e018)
 
-![Texte alternatif](https://github.com/GhozlenBY/Motion-Classification-and-Anomaly-Detection/issues/8#issue-2000595253)
+![light](https://github.com/GhozlenBY/Motion-Classification-and-Anomaly-Detection/assets/148441001/a4f26c71-d090-4621-bf54-566f1bc0d185)
+![heavy](https://github.com/GhozlenBY/Motion-Classification-and-Anomaly-Detection/assets/148441001/1fdde810-342a-4f55-8bdc-de38bbdf608b)
+![off](https://github.com/GhozlenBY/Motion-Classification-and-Anomaly-Detection/assets/148441001/b498845c-12f5-4451-9bd4-2b5699ccff34)
 
-![Texte alternatif](https://github.com/GhozlenBY/Motion-Classification-and-Anomaly-Detection/issues/9#issue-2000595400)
-
-![Texte alternatif](https://github.com/GhozlenBY/Motion-Classification-and-Anomaly-Detection/issues/10#issue-2000595521)
 
 # Conclusion
 
