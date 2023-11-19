@@ -19,7 +19,7 @@ Vérification du Système : Après le flashage, nous avons effectué un reset de
 
 Méthodologie : À l'aide d'une application pour smartphone conçue pour générer des vibrations, nous avons imité différents états de machines et collecté les données correspondantes de l'accéléromètre.
 
-Étiquetage des Données : Chaque ensemble de données a été méticuleusement étiqueté selon son état opérationnel pour assurer l'exactitude des phases d'entraînement et de test. Cette étape est cruciale dans les tâches d'apprentissage supervisé.
+Étiquetage des Données : Chaque ensemble de données a été méticuleusement étiqueté (label) selon son état opérationnel pour assurer l'exactitude des phases d'entraînement et de test. Cette étape est cruciale dans les tâches d'apprentissage supervisé.
 
 Volume et Variété : Des données adéquates pour chaque état (off, light, heavy) ont été rassemblées, en veillant à l'équilibre entre les ensembles de données d'entraînement et de test.
 
@@ -50,6 +50,7 @@ Entraînement de Modèle Séparé : Un modèle de détection d'anomalies supplé
 # Test du Modèle
 
 Évaluation des Performances : Les modèles entraînés ont été rigoureusement testés avec des données inédites pour évaluer leur performance, assurant la fiabilité et l'exactitude du système dans des scénarios réels.
+![Data_acquisation](https://github.com/GhozlenBY/Motion-Classification-and-Anomaly-Detection/assets/148441001/2dc3cbc8-45de-47f6-960f-1de9049814df)
 
 ![Texte alternatif](https://github.com/GhozlenBY/Motion-Classification-and-Anomaly-Detection/issues/6#issue-2000594344)
 
