@@ -1,9 +1,8 @@
 # Machine State Classification Using Edge Impulse and Arduino
-![image](https://github.com/GhozlenBY/Motion-Classification-and-Anomaly-Detection/assets/148441001/f7d85c06-98f5-470a-8d38-87c2e4e09b27) ![image](https://github.com/GhozlenBY/Motion-Classification-and-Anomaly-Detection/assets/148441001/e38976d1-a964-42ce-8a0e-02cb745c2693) ![image](https://github.com/GhozlenBY/Motion-Classification-and-Anomaly-Detection/assets/148441001/2cee95bd-baed-4db8-8662-4427328e3aae) ![image]
+![image](https://github.com/GhozlenBY/Motion-Classification-and-Anomaly-Detection/assets/148441001/a4e00fb0-9d42-4b18-9aef-4475fb45ef5b)
+
 
 https://github.com/GhozlenBY/Motion-Classification-and-Anomaly-Detection/tree/main
-
-
 
 #  Overview
 
